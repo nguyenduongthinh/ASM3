@@ -1,0 +1,76 @@
+/* === File: css/tablet.css === */
+/* Giải thích: File này dùng để style giao diện cho website. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+/* .name: Style cho class "name" */
+    .name{
+        display: none;
+    }
+/* #nav-bar a:nth-child(2): Style cho id "nav-bar a:nth-child(2)" */
+    #nav-bar a:nth-child(2){
+        border-right: none;
+    }
+/* #about .container: Style cho id "about .container" */
+    #about .container{
+        gap: 40px;
+    }
+/* #job-info .container: Style cho id "job-info .container" */
+    #job-info .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+/* .certificate-item: Style cho class "certificate-item" */
+    .certificate-item{
+        grid-template-columns: 1fr;
+    }
+/* .charter-wrapper: Style cho class "charter-wrapper" */
+    .charter-wrapper{
+        grid-template-columns: 1fr;
+    }
+/* #goals: Style cho id "goals" */
+    #goals{
+        grid-row: 1/2;
+    }
+/* #scopes: Style cho id "scopes" */
+    #scopes{
+        grid-row: 2/3;
+    }
+/* #team: Style cho id "team" */
+    #team{
+        grid-row: 3/4;
+    }
+/* #primary: Style cho id "primary" */
+    #primary{
+        grid-row: 4/5;
+    }
+/* #timeline: Style cho id "timeline" */
+    #timeline{
+        grid-row: 5/6;
+        grid-column: unset;
+    }
+/* #goals .row, #team .row, #primary .row, #timeline .row: Style cho id "goals .row, #team .row, #primary .row, #timeline .row" */
+    #goals .row, #team .row, #primary .row, #timeline .row{
+        flex-direction: column;
+    }
+/* #team .row .content, #primary .row .content: Style cho id "team .row .content, #primary .row .content" */
+    #team .row .content, #primary .row .content{
+        align-self: flex-start;
+    }
+/* #scopes .charter-content: Style cho id "scopes .charter-content" */
+    #scopes .charter-content{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+/* #timeline .row: Style cho id "timeline .row" */
+    #timeline .row{
+        gap: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+/* #timeline .row>*: Style cho id "timeline .row>*" */
+    #timeline .row>*{
+        align-self: flex-start;
+    }
+/* #timeline .row .content: Style cho id "timeline .row .content" */
+    #timeline .row .content{
+        width: 100%;
+    }
+}

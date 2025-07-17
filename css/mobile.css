@@ -1,0 +1,119 @@
+/* === File: css/mobile.css === */
+/* Giải thích: File này dùng để style giao diện cho website. */
+@media only screen and (max-width: 767px) {
+  section > .container {
+    padding: 30px 20px;
+  }
+  /* .name: Style cho class "name" */
+  .name {
+    display: none;
+  }
+  /* #nav-bar: Style cho id "nav-bar" */
+  #nav-bar {
+    border: none;
+  }
+  /* #nav-bar .container: Style cho id "nav-bar .container" */
+  #nav-bar .container {
+    flex-direction: column;
+  }
+  /* #nav-bar .container a: Style cho id "nav-bar .container a" */
+  #nav-bar .container a {
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+  }
+  /* #about .container: Style cho id "about .container" */
+  #about .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  /* #job-info .container, .certificate-container, .project-container: Style cho id "job-info .container, .certificate-container, .project-container" */
+  #job-info .container,
+  .certificate-container,
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+  /* .project-container: Style cho class "project-container" */
+  .project-container {
+    row-gap: 40px;
+  }
+  /* .certificate-item: Style cho class "certificate-item" */
+  .certificate-item {
+    grid-template-columns: 1fr;
+  }
+  /* .vertical: Style cho class "vertical" */
+  .vertical {
+    display: block;
+    position: unset;
+    margin: 0;
+    width: 100%;
+    height: 1px;
+  }
+  /* #footer .container ul: Style cho id "footer .container ul" */
+  #footer .container ul {
+    flex-direction: column;
+  }
+  /* .charter-wrapper: Style cho class "charter-wrapper" */
+  .charter-wrapper {
+    grid-template-columns: 1fr;
+  }
+  /* #goals: Style cho id "goals" */
+  #goals {
+    grid-row: 1/2;
+  }
+  /* #scopes: Style cho id "scopes" */
+  #scopes {
+    grid-row: 2/3;
+  }
+  /* #team: Style cho id "team" */
+  #team {
+    grid-row: 3/4;
+  }
+  /* #primary: Style cho id "primary" */
+  #primary {
+    grid-row: 4/5;
+  }
+  /* #timeline: Style cho id "timeline" */
+  #timeline {
+    grid-row: 5/6;
+    grid-column: unset;
+  }
+  /* #goals .row, #team .row, #primary .row, #timeline .row: Style cho id "goals .row, #team .row, #primary .row, #timeline .row" */
+  #goals .row,
+  #team .row,
+  #primary .row,
+  #timeline .row {
+    flex-direction: column;
+  }
+  /* #team .row .content, #primary .row .content: Style cho id "team .row .content, #primary .row .content" */
+  #team .row .content,
+  #primary .row .content {
+    align-self: flex-start;
+  }
+  /* #scopes .charter-content: Style cho id "scopes .charter-content" */
+  #scopes .charter-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  /* #timeline .row: Style cho id "timeline .row" */
+  #timeline .row {
+    gap: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /* #timeline .row>*: Style cho id "timeline .row>*" */
+  #timeline .row > * {
+    align-self: flex-start;
+  }
+  /* #timeline .row .content: Style cho id "timeline .row .content" */
+  #timeline .row .content {
+    width: 100%;
+  }
+}
+@media (max-width: 740px) {
+  .certificate-container {
+    display: flex !important; /* Đảm bảo hiển thị dạng flex container, ghi đè mọi giá trị khác nếu có */
+    flex-direction: column !important; /* Sắp xếp các phần tử con theo chiều dọc (từ trên xuống), ghi đè mọi giá trị khác nếu có */
+    gap: 20px !important; /* Tạo khoảng cách 20px giữa các phần tử con, ghi đè mọi giá trị khác nếu có */
+  }
+}
